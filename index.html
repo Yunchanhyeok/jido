@@ -28,7 +28,7 @@
         .custom-icon {
             width: 50px;
             height: 50px;
-            background: url('/icon') no-repeat center center;
+            background: url('./KakaoTalk_20240701_102412109.png') no-repeat center center;
             background-size: contain;
         }
         #videoContainer {
@@ -58,7 +58,7 @@
             z-index: 1001;
         }
     </style>
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=zp66m5o9lb"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
     <script>
         function initMap() {
             var mapOptions = {
@@ -86,7 +86,7 @@
                 naver.maps.Event.addListener(marker, 'click', function() {
                     var videoContainer = document.getElementById('videoContainer');
                     var videoPlayer = document.getElementById('videoPlayer');
-                    videoPlayer.src = '/video';
+                    videoPlayer.src = './security_video.mp4';
                     videoContainer.style.display = 'block';
                     videoPlayer.play();
                 });
@@ -117,3 +117,4 @@
     </div>
 </body>
 </html>
+
